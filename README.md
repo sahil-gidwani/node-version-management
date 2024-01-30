@@ -6,8 +6,6 @@
 
 This script facilitates version management for software projects, allowing users to initialize, increment, set, update, and delete versions stored in a JSON file named `versions.json`. Below is a comprehensive guide detailing its usage, supported command-line options, and integration as an npm script.
 
----
-
 ### Structure of `versions.json`
 
 The `versions.json` file contains an array of version objects with the following structure:
@@ -34,6 +32,8 @@ The `versions.json` file contains an array of version objects with the following
 - fs: Node.js file system module for file operations.
 - child_process: Node.js module for executing shell commands.
 - minimist: Node.js module for parsing command-line arguments.
+
+---
 
 ## Functions
 
@@ -72,6 +72,8 @@ The `versions.json` file contains an array of version objects with the following
 - Executes based on command-line arguments:
   - Initializes version data if versions.json does not exist.
   - Updates, deletes, sets, or increments versions based on provided options.
+
+---
 
 ### Usage
 
