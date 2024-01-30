@@ -1,4 +1,4 @@
-## Version Management Script Documentation
+# Version Management Script Documentation
 
 ---
 
@@ -29,6 +29,48 @@ The `versions.json` file contains an array of version objects with the following
   ]
 }
 ```
+## Functions
+
+### initializeVersion()
+- Initializes version data if versions.json does not exist.
+- Accepts an optional initial version number.
+
+### getVersionData()
+- Retrieves version data from the versions.json file.
+
+### incrementVersion(versionData)
+- Increments the latest version number and updates versions.json.
+
+### incrementVersionNumber(version)
+- Increments the version number.
+
+### setVersion(version)
+- Sets a specific version if it's greater than the latest version.
+
+### compareVersions(version1, version2)
+- Compares two version numbers.
+
+### updateSpecificVersion(version)
+- Updates a specific version with the latest commit ID and timestamp.
+
+### updateLatestVersion(versionData)
+- Updates the latest version with the latest commit ID and timestamp.
+
+### deleteSpecificVersion(version)
+- Deletes a specific version from the version data.
+
+### deleteLatestVersion(versionData)
+- Deletes the latest version from the version data.
+
+## Main Function (main())
+- Executes based on command-line arguments:
+  - Initializes version data if versions.json does not exist.
+  - Updates, deletes, sets, or increments versions based on provided options.
+
+## Dependencies
+- fs: Node.js file system module for file operations.
+- child_process: Node.js module for executing shell commands.
+- minimist: Node.js module for parsing command-line arguments.
 
 ### Usage
 
