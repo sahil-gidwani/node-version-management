@@ -6,7 +6,7 @@
 
 This script facilitates version management for software projects, allowing users to initialize, increment, set, update, and delete versions stored in a JSON file named `versions.json`. Below is a comprehensive guide detailing its usage, supported command-line options, and integration as an npm script.
 
-### Structure of `versions.json`
+## Structure of `versions.json`
 
 The `versions.json` file contains an array of version objects with the following structure:
 
