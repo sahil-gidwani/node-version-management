@@ -93,11 +93,12 @@ If no options are provided, the script increments the latest version.
 #### 1. Initialize Version
 
 Initialize the version data with an initial version:
-(If a version is not provided the initial version is set to 1.0.0)
 
 ```
 node versioning.js --version=0.0.0
 ```
+
+*If a version is not provided the initial version is set to 1.0.0
 
 #### 2. Increment Version
 
