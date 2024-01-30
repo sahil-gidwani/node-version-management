@@ -23,7 +23,7 @@ The `versions.json` file contains an array of version objects with the following
       "latestCommitId": "3e2456d2b7a88d0963c35a1a80cddae6e12f79d1",
       "createdDatetime": "2024-01-30T08:33:16.683Z"
     },
-    ..
+    ....
   ]
 }
 ```
