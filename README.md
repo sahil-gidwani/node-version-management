@@ -16,12 +16,17 @@ The `versions.json` file contains an array of version objects with the following
     {
       "version": "1.0.0",
       "latestCommitId": "a4e6b14f9c97a0c0c4d9e2c6c8fb3d637c9dc0f8",
-      "createdDatetime": "2024-01-30T08:33:04.275Z"
+      "createdDatetime": "2024-01-20T06:16:04.275Z"
     },
     {
       "version": "1.0.1",
       "latestCommitId": "3e2456d2b7a88d0963c35a1a80cddae6e12f79d1",
       "createdDatetime": "2024-01-30T08:33:16.683Z"
+    },
+    {
+      "version": "2.0.0",
+      "latestCommitId": "7b8a3e9cf2a106f451e0de4e04a937d67d76f874",
+      "createdDatetime": "2024-02-15T12:45:00.000Z"
     }
   ]
 }
