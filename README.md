@@ -29,6 +29,12 @@ The `versions.json` file contains an array of version objects with the following
   ]
 }
 ```
+
+## Dependencies
+- fs: Node.js file system module for file operations.
+- child_process: Node.js module for executing shell commands.
+- minimist: Node.js module for parsing command-line arguments.
+
 ## Functions
 
 ### initializeVersion()
@@ -67,11 +73,6 @@ The `versions.json` file contains an array of version objects with the following
   - Initializes version data if versions.json does not exist.
   - Updates, deletes, sets, or increments versions based on provided options.
 
-## Dependencies
-- fs: Node.js file system module for file operations.
-- child_process: Node.js module for executing shell commands.
-- minimist: Node.js module for parsing command-line arguments.
-
 ### Usage
 
 To execute the script, use the following command:
@@ -98,16 +99,17 @@ Initialize the version data with an initial version:
 node versioning.js --version=0.0.0
 ```
 
-*If a version is not provided the initial version is set to 1.0.0
+If a version is not provided the initial version is set to 1.0.0
 
 #### 2. Increment Version
 
 Increment the latest version:
-(By default increments the latest version by 0.0.1)
 
 ```
 node versioning.js
 ```
+
+The default behaviour is to increment the latest version by 0.0.1
 
 #### 3. Set Version
 
@@ -120,20 +122,22 @@ node versioning.js --version=2.0.0
 #### 4. Update Version
 
 Update a specific version with the latest commit ID and timestamp:
-(If a version is not provided then it updates the latest version)
 
 ```
 node versioning.js --version=1.0.1 --update
 ```
 
+If a version is not provided then it updates the latest version
+
 #### 5. Delete Version
 
 Delete a specific version:
-(If a version is not provided then it deletes the latest version)
 
 ```
 node versioning.js --version=1.0.0 --delete
 ```
+
+If a version is not provided then it deletes the latest version
 
 ### Integration as npm Script
 
