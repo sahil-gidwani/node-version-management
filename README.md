@@ -62,7 +62,7 @@ The `versions.json` file contains an array of version objects with the following
 ### deleteLatestVersion(versionData)
 - Deletes the latest version from the version data.
 
-## Main Function (main())
+### Main Function (main())
 - Executes based on command-line arguments:
   - Initializes version data if versions.json does not exist.
   - Updates, deletes, sets, or increments versions based on provided options.
